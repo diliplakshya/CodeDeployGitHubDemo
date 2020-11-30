@@ -1,5 +1,5 @@
 #!/bin/bash
-
-export FLASK_ENV=development
-cd backend
-flask run
+echo "run"
+# export FLASK_ENV=development
+# cd backend
+# flask run
