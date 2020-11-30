@@ -95,7 +95,6 @@ hooks:
   AfterInstall:
     - location:ds_migration_app_dev/install_packages.sh
       timeout:300
-      runas:
   # During the ApplicationStart deployment lifecycle event, run the commands
   #   in the script specified in "location".
   ApplicationStart:
