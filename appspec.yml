@@ -70,12 +70,12 @@ hooks:
     - location: ds_migration_app_dev/before.sh
       timeout: 300
   AfterInstall:
-    - location: CodeDeployGitHubDemo/ds_migration_app_dev/install_packages.sh
+    - location: ds_migration_app_dev/install_packages.sh
       timeout: 300
   # During the ApplicationStart deployment lifecycle event, run the commands
   #   in the script specified in "location".
   ApplicationStart:
-    - location: CodeDeployGitHubDemo/ds_migration_app_dev/run_server.sh
+    - location: ds_migration_app_dev/run_server.sh
       timeout: 20
   # During the ValidateService deployment lifecycle event, run the commands
   #   in the script specified in "location".
