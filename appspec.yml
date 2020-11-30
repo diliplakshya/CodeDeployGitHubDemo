@@ -23,8 +23,8 @@ os: linux
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
 files:
-  - source:/
-    destination:/tmp
+  - source: /
+    destination: /tmp
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify a "permissions"
 #   section here that describes special permissions to apply to the files
@@ -70,12 +70,12 @@ hooks:
     - location: CodeDeployGitHubDemo/ds_migration_app_dev/before.sh
       timeout: 300
   AfterInstall:
-    - location:CodeDeployGitHubDemo/ds_migration_app_dev/install_packages.sh
-      timeout:300
+    - location: CodeDeployGitHubDemo/ds_migration_app_dev/install_packages.sh
+      timeout: 300
   # During the ApplicationStart deployment lifecycle event, run the commands
   #   in the script specified in "location".
   ApplicationStart:
-    - location:CodeDeployGitHubDemo/ds_migration_app_dev/run_server.sh
-      timeout:20
+    - location: CodeDeployGitHubDemo/ds_migration_app_dev/run_server.sh
+      timeout: 20
   # During the ValidateService deployment lifecycle event, run the commands
   #   in the script specified in "location".
