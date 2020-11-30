@@ -69,6 +69,7 @@ hooks:
   BeforeInstall:
     - location: ds_migration_app_dev/before.sh
       timeout: 300
+      runas: root
   AfterInstall:
     - location: ds_migration_app_dev/install_packages.sh
       timeout: 300
