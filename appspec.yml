@@ -67,7 +67,7 @@ hooks:
   # During the AfterInstall deployment lifecycle event, run the commands
   #   in the script specified in "location".
   BeforeInstall:
-    - location: CodeDeployGitHubDemo/ds_migration_app_dev/before.sh
+    - location: ds_migration_app_dev/before.sh
       timeout: 300
   AfterInstall:
     - location: CodeDeployGitHubDemo/ds_migration_app_dev/install_packages.sh
