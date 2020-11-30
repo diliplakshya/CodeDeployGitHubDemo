@@ -1,3 +1,3 @@
 #!/bin/bash
-
-pip install -r requirements.txt
+touch /tmp/dummy.txt
+#pip install -r requirements.txt
